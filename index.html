@@ -16,6 +16,16 @@
 				}
 			}
 		</style>
+		<script>
+			function visib(id) {
+			  var x = document.getElementById(id);
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+		</script>
 	</head>
 	<body bgcolor="#FFFFFF" text="#000000" link="#543D7d" vlink="#543D7d" alink="543D7d">
 		<table width="100%">
@@ -63,7 +73,7 @@
 						<!-- About -->
 						<font size="4" color="#002F6C">About</font>
 						<font size="2.5" color="#000000">
-							<p>I am a 6th-year Econ PhD Candidate at the University of Rochester.</p>
+							<p>I am a 6th-year Econ Ph.D. Candidate at the University of Rochester.</p>
 							<p>My research interests are in macroeconomics and labor economics.</p>
 							<p style="color:red;"><b>I will be on the job market 2023/2024.</b></p>
 						</font>	
@@ -76,11 +86,12 @@
 						<font size="2" color="#000000">
 							<p>
 								<b> "Consumption's Response to Permanent Income: The Role of Consumption Commitments"</b>
-								<u>
-									<a href="https://pclins.github.io/files/permanent_income.pdf" target="_blank">[PDF]</a>
-								</u>
+								<u><a href="https://pclins.github.io/files/permanent_income.pdf" target="_blank">[PDF]</a></u>
+								<u><a href="#/" onclick="visib('abs_permanent')">[Abstract]</a></u>
 							</p>
-							<!-- <p align="justify" style="margin-left: 25px;">
+							
+							<div id="abs_permanent" style="display: none;">
+							<p align="justify" style="margin-left: 25px;">
 								The textbook permanent-income hypothesis predicts that the level of consumption is proportional to the level of permanent income, while, 
 								in the data, the elasticity of consumption to permanent income appears to be far below one. In this paper, I provide evidence for a novel 
 								theory for this consumption under-response to permanent income based on <i>consumption commitments</i> -- hard-to-adjust consumption 
@@ -92,7 +103,11 @@
 							</p>
 							<p style="text-indent: 25px;">
 								<i> Tapan Mitra Prize for the Best 5th-Year Paper in Empirical Economics, University of Rochester, 2023</i>
-							</p> -->
+							</p>
+							</div>
+							
+							
+							
 						</font>
 						<br/>
 						<hr color="#002F6C"/>
@@ -102,10 +117,18 @@
 						<font size="2" color="#000000">						
 							<p>
 								<b> "The Quality-Adjusted Cyclical Price of Labor"</b> (together with Mark Bils, Marianna Kudlyak), <i>Journal of Labor Economics</i>, October 2023.
-								<u>
-									<a href="https://pclins.github.io/files/Bils%2C%20Kudlyak%2C%20Lins%20-%20The%20Quality-Adjusted%20Cyclical%20Price%20of%20Labor.pdf" target="_blank">[PDF]</a>
-								</u>
+								<u><a href="https://pclins.github.io/files/Bils%2C%20Kudlyak%2C%20Lins%20-%20The%20Quality-Adjusted%20Cyclical%20Price%20of%20Labor.pdf" target="_blank">[PDF]</a></u>
+								<u><a href="#/" onclick="visib('abs_pricelabor')">[Abstract]</a></u>
 							</p>
+							
+							<div id="abs_pricelabor" style="display: none;">
+							<p align="justify" style="margin-left: 25px;">
+								We estimate cyclicality in labor's user cost allowing for cyclical fluctuations in the quality of worker-firm matches and wages that are smoothed within employment matches.
+								To do so, we exploit a match's long-run wage to control for its quality. Using NLSY data for 1980 to 2019, we identify three channels by which recessions affect user cost:
+								It lowers the new-hire wage; it lowers wages going forward in the match; but it also results in higher subsequent separations. All totaled, we find that labor's user cost
+								is highly procyclical, increasing by more than 4% for a 1 pp decline in unemployment.
+							</p>
+							</div>
 						</font>
 						<br/>
 						<hr color="#002F6C"/>
