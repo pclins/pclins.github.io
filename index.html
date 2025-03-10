@@ -17,6 +17,19 @@
 			}
 			.about {
 				margin-top: 40px; /* Adjust the value based on your preference */
+				}
+			body {
+				background-color: #FFFFFF;
+				color: #000000;
+			}
+			a {
+				color: #543D7d;
+			}
+			a:visited {
+				color: #543D7d;
+			}
+			a:active {
+				color: #543D7d;
 			}
 		</style>
 		<script>
@@ -30,7 +43,7 @@
 			}
 		</script>
 	</head>
-	<body bgcolor="#FFFFFF" text="#000000" link="#543D7d" vlink="#543D7d" alink="543D7d">
+	<body>
 		<table width="100%">
 			<!-- Title -->
 			<tr>
@@ -54,86 +67,83 @@
 			<!-- About -->
 			<tr>
 				<td class="column" width="200" valign="top">
-					<img src="files/profile2.jpg" width="227" height="304" alt="Photo" />
+					<img src="files/profile2.jpg" width="227" height="304" alt="Photo of Paulo Lins" />
 					<br/>
-					<font face="arial" size="2" color="#000000">
-						<p>
-							<b>plins@clemson.edu</b>
-						</p>
-					</font>
-					<font face="arial" size="3">
-						<p>	Assistant Professor<br/>
+					<p style="font-family: Arial; font-size: 14px; color: #000000;">
+						<b>plins@clemson.edu</b>
+					</p>
+					<p style="font-family: Arial; font-size: 16px; color: #000000;">
+						Assistant Professor<br/>
 						Clemson University<br/>
 						Clemson, SC<br/>
-						</p>	
-					</font>
-					<font face="arial" size="3">
-						<p>
-							<a href="https://pclins.github.io/files/cv_paulo.pdf" target="_blank" style="text-decoration: none; color: red; font-weight: bold">CV</a>
-						</p>
-					</font>
+					</p>
+					<p style="font-family: Arial; font-size: 16px;"></p>
+						<a href="https://pclins.github.io/files/cv_paulo.pdf" target="_blank" style="text-decoration: none; color: red; font-weight: bold">CV</a>
+					</p>
 				</td>
 				<td class="column" width="20"></td>
 				<td class="column">
-					<font face="arial" color="#000000" size="3">
+					<div style="font-family: arial; color: #000000; font-size: 16px;">
 						<!-- About -->
 						<div class="about">
-						<font size="4" color="#002F6C">About</font>
-						<font size="2.5" color="#000000">
-							<p>I am an Assistant Professor of Economics at Clemson University. I received a Ph.D. in Economics from the University of Rochester in 2024.</p>
-							<p>My research interests are in macroeconomics and labor economics.</p>
-						</font>
+							<div style="font-size: 18px; color: #002F6C;">About</div>
+							<div style="font-size: 14px; color: #000000;">
+								<p>I am an Assistant Professor of Economics at Clemson University. I received a Ph.D. in Economics from the University of Rochester in 2024.</p>
+								<p>My research interests are in macroeconomics and labor economics.</p>
+							</div>
 						</div>
 						
-						</br>
+						<br/>
 						<hr color="#002F6C"/>
 						<br/>
 						<!-- Working Papers -->
-						<font size="4" color="#002F6C">Working Papers</font>
-						<font size="2.5" color="#000000">
-														
+						<div style="font-size: 18px; color: #002F6C;">Working Papers</div>
+						<div style="font-size: 14px; color: #000000;">
 							<p>
 								<a href="https://pclins.github.io/files/permanent_income.pdf" style="color: #002F6C; font-weight: bold; text-decoration: none" target="_blank">"Consumption's Response to Permanent Income: The Role of Consumption Commitments"</a>,
-								November 2023.
+								March 2025. 
 								<a href="#/" onclick="visib('abs_consumption')" style="color: #002F6C; font-weight: bold; text-decoration: none" >[Abstract]</a>
+								<i style="color: green; font-weight: bold;">-- New version!</i>
 							</p>
 							
 							<div id="abs_consumption" style="display: none;">
-							<p align="justify" style="margin-left: 25px;">
-								The textbook permanent-income hypothesis predicts that the level of consumption is proportional to the level of permanent income, while, 
-								in the data, the elasticity of consumption to permanent income appears to be far below one. In this paper, I provide evidence for a novel 
-								theory for this consumption under-response to permanent income based on <i>consumption commitments</i> -- hard-to-adjust consumption 
-								choices that resemble long-term commitments. Empirically, I document four main new facts that support the theory: (a) the consumption 
-								elasticity to permanent income is larger for younger households, (b) it depends on past income trajectories, and (c) it becomes larger 
-								after households adjust their commitments; furthermore, I show that (d) those households that have "under-responded" to their income 
-								growth skew spending away from hard-to-adjust goods (notably shelter). These facts are evidence in favor of household "lock-in" to past 
-								consumption choices. Quantitatively, I show that consumption commitments are necessary for life-cycle models to account for all the documented facts.
-							</p>
+								<p align="justify" style="margin-left: 25px;">
+									The textbook permanent-income hypothesis predicts that the level of consumption is proportional to the level of permanent income, while, 
+									in the data, the elasticity of consumption to permanent income appears to be far below one. In this paper, I provide evidence for a novel 
+									theory for this consumption under-response to permanent income based on <i>consumption commitments</i> -- hard-to-adjust consumption 
+									choices that resemble long-term commitments. Empirically, I document four main new facts that support the theory: (a) the consumption 
+									elasticity to permanent income is larger for younger households, (b) it depends on past income trajectories, and (c) it becomes larger 
+									after households adjust their commitments; furthermore, I show that (d) those households that have "under-responded" to their income 
+									growth skew spending away from hard-to-adjust goods (notably shelter). These facts are evidence in favor of household "lock-in" to past 
+									consumption choices. Quantitatively, I show that consumption commitments are necessary for life-cycle models to account for all the documented facts.
+								</p>
 							</div>
 							
 							<p>
 								<a href="https://pclins.github.io/files/Growing_up_with_an_Unemployed_Mother.pdf" style="color: #002F6C; font-weight: bold; text-decoration: none" target="_blank">"Growing up with an Unemployed Mother"</a>,
 								(together with Nataliya Gimpelson), July 2024.
 								<a href="#/" onclick="visib('abs_mother')" style="color: #002F6C; font-weight: bold; text-decoration: none" >[Abstract]</a>
+								<i style="color: green; font-weight: bold;">-- New version coming soon!</i> 
 							</p>
 							
 							<div id="abs_mother" style="display: none;">
-							<p align="justify" style="margin-left: 25px;">
-								Job losses negatively affect children's labor market outcomes through decreases in family income. Since unemployed parents have more time available to invest in their children,
-								the effects of parental unemployment on children’s future outcomes are ambiguous after accounting for this drop in income. Using NLSY79 and NLSY79-CYA, we show that the total
-								amount of time a mother spends unemployed throughout her child's childhood has direct negative effects on the child’s future wage and employment probability, even conditional
-								on family income. By contrasting these results with the weaker effects of mothers being out of the labor force and instrumenting for involuntary maternal non-employment, we
-								suggest that the effects might be causal. We further show that maternal unemployment negatively impacts the quality of the home environment and that unemployed mothers
-								allocate very little additional time to educating their children. 
-							</p>
+								<p align="justify" style="margin-left: 25px;">
+									Job losses negatively affect children's labor market outcomes through decreases in family income. Since unemployed parents have more time available to invest in their children,
+									the effects of parental unemployment on children’s future outcomes are ambiguous after accounting for this drop in income. Using NLSY79 and NLSY79-CYA, we show that the total
+									amount of time a mother spends unemployed throughout her child's childhood has direct negative effects on the child’s future wage and employment probability, even conditional
+									on family income. By contrasting these results with the weaker effects of mothers being out of the labor force and instrumenting for involuntary maternal non-employment, we
+									suggest that the effects might be causal. We further show that maternal unemployment negatively impacts the quality of the home environment and that unemployed mothers
+									allocate very little additional time to educating their children. 
+								</p>
 							</div>
-						</font>
+						</div>
+						
 						<br/>
 						<hr color="#002F6C"/>
 						<br/>
 						<!-- Publications -->
-						<font size="4" color="#002F6C">Publications</font>
-						<font size="2" color="#000000">						
+						<div style="font-size: 18px; color: #002F6C;">Publications</div>
+						<div style="font-size: 14px; color: #000000;">					
 														
 							<p>
 								<a href="https://pclins.github.io/files/Araujo%2C%20Costa%2C%20Lins%2C%20Santos%2C%20Valk%20-%20Inflation%20Targeting%20under%20Fiscal%20Fragility.pdf" style="color: #002F6C; font-weight: bold; text-decoration: none" target="_blank">"Inflation Targeting under Fiscal Fragility"</a>
@@ -172,19 +182,19 @@
 								<a href="https://www.imf.org/en/Publications/Books/Issues/2019/03/11/Brazil-Boom-Bust-and-Road-to-Recovery-44927" style="color: #002F6C; font-weight: bold; text-decoration: none" target="_blank">[Book]</a>
 							</p>
 							
-						</font>
+						</div>
 						<br/>
 						<hr color="#002F6C"/>
 						<br/>
 						<!-- Working in Progress -->
-						<font size="4" color="#002F6C">Work in Progress</font>
-						<font size="2" color="#000000">
+						<div style="font-size: 18px; color: #002F6C;">Work in Progress</div>
+						<div style="font-size: 14px; color: #000000;">
 							<p>
 								<b> "Firm Stochastic Discount Factors Over the Business Cycle"</b> (together with Lorenz Ekerdt, Kai-Jie Wu)
-								<!-- a href="#/" onclick="visib('abs_labordemand')" style="color: #002F6C; font-weight: bold; text-decoration: none" >[Abstract]</a !-->
+								 <!-- <a href="#/" onclick="visib('abs_labordemand')" style="color: #002F6C; font-weight: bold; text-decoration: none" >[Abstract]</a> -->
 							</p>
 							
-							<!-- div id="abs_labordemand" style="display: none;">
+							<!-- <div id="abs_labordemand" style="display: none;">
 							<p align="justify" style="margin-left: 25px;">
 								Recent business-cycle theories have relied on countercyclical increases in risk premiums to generate realistic cyclical fluctuations in unemployment. I propose a method to 
 								identify the sources of this variation in risk premiums by estimating firm-specific discount rates using establishment-level panel data. My method relies on two steps. First, 
@@ -194,8 +204,8 @@
 								I will combine employer-employee information from the Longitudinal Employer-Household Dynamics (LEHD) and Longitudinal Business Database (LBD) with cost information from 
 								the Economic Census and annual surveys and balance sheet data from the Quarterly Financial Reports (QFR). 
 							</p>
-							</div !-->
-
+							</div> -->
+							
 							<p>
 								<b> "Human Capital, Job Ladders, and Life-Cycle Labor Supply"</b> (together with Xiaonan Ma)
 								[Draft available upon request]
@@ -205,15 +215,15 @@
 							<div id="abs_humancapital" style="display: none;">
 							<p align="justify" style="margin-left: 25px;">
 								We document new facts about the behavior of total annual hours worked over the life cycle using NLSY79 data and show which ingredients life-cycle models need to explain these facts.
-								In the data, both the intensive and extensive margins of labor supply are equally important, each contributing close to 50\% to the life-cycle growth in hours. 
+								In the data, both the intensive and extensive margins of labor supply are equally important, each contributing close to 50% to the life-cycle growth in hours. 
 								We propose a life-cycle model that nests different theories used to explain the hours' profile and calibrate it to reproduce our empirical evidence. 
 								Both human capital accumulation and a job ladder are needed to account for the data patterns, while versions with only one ingredient fail to reproduce labor supply behavior. 
 								Through counterfactual exercises, we find that human capital accumulation drives wage growth in the early stages of a worker's career, 
 								while an interaction of job search and job-switching costs drives hours growth.
 							</p>
-							</div !-->
-						</font>
-					</font>
+							</div>
+						</div>
+					</div>
 				</td>
 			</tr>
 		</table>
