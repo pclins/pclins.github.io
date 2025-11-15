@@ -43,7 +43,6 @@
             --text-secondary: #4a4a4a;
             --border-color: #e0e0e0;
             --background: #FFFFFF;
-            --max-width: 1200px;
         }
 
         * {
@@ -129,11 +128,12 @@
         }
 
         /* Main Container */
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 60px 6%;
-        }
+		.container {
+			width: 92%;
+			max-width: none;
+			margin: 0 auto;
+			padding: 40px 0 60px;
+		}
 
         /* Header Section */
         header {
