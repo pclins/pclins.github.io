@@ -4,745 +4,526 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!-- Primary Meta Tags -->
-    <title>Paulo Lins - Assistant Professor of Economics, Clemson University</title>
-    <meta name="title" content="Paulo Lins - Assistant Professor of Economics, Clemson University"/>
-    <meta name="description" content="Paulo Lins is an Assistant Professor of Economics at Clemson University. Research in macroeconomics, labor economics, consumption behavior, and household finance."/>
-    <meta name="keywords" content="Paulo Lins, Economics, Macroeconomics, Labor Economics, Clemson University, Consumption Commitments, Labor Market Dynamics, Computational Economics"/>
+    <title>Paulo Lins | Clemson University</title>
+    <meta name="description" content="Paulo Lins is an Assistant Professor of Economics at Clemson University. Research in macroeconomics and labor economics."/>
     <meta name="author" content="Paulo Lins"/>
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://pauloclins.com/"/>
-    <meta property="og:title" content="Paulo Lins - Assistant Professor of Economics, Clemson University"/>
-    <meta property="og:description" content="Research in macroeconomics, labor economics, consumption behavior, and household finance."/>
+    <meta property="og:title" content="Paulo Lins | Clemson University"/>
+    <meta property="og:description" content="Research in macroeconomics and labor economics."/>
     <meta property="og:image" content="https://pauloclins.com/files/profile2.jpg"/>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary"/>
-    <meta property="twitter:url" content="https://pauloclins.com/"/>
-    <meta property="twitter:title" content="Paulo Lins - Assistant Professor of Economics, Clemson University"/>
-    <meta property="twitter:description" content="Research in macroeconomics, labor economics, consumption behavior, and household finance."/>
-    <meta property="twitter:image" content="https://pauloclins.com/files/profile2.jpg"/>
-
     <!-- Google Site Verification -->
-    <meta name="google-site-verification" content="GCT6YlgIvt-DvqAYGvtXyCyKMBhA_wELd-2nfe651Ig" />
+    <meta name="google-site-verification" content="GCT6YlgIvt-DvqAYGvtXyCyKMBhA_wELd-2nfe651Ig"/>
 
     <!-- Favicon -->
     <link rel="icon" href="files/favicon2_zero.ico"/>
-
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://pauloclins.com/"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
 
     <style>
         :root {
-            --primary-color: #002F6C;
-            --accent-color: #543D7d;
-            --highlight-color: #D00000;
-            --text-color: #1a1a1a;
-            --text-secondary: #4a4a4a;
-            --border-color: #e0e0e0;
-            --background: #FFFFFF;
+            --navy:   #002F6C;
+            --purple: #543D7D;
+            --red:    #C8001E;
+            --text:   #333333;
+            --muted:  #666666;
+            --border: #e5e5e5;
+            --bg:     #ffffff;
+            --sidebar-w: 270px;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         html {
-            font-size: 16px;
+            font-size: 14px;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         body {
-            background-color: var(--background);
-            color: var(--text-color);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            padding: 50px;
         }
 
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
+        a { color: var(--purple); text-decoration: none; }
+        a:hover, a:focus { color: var(--navy); text-decoration: underline; }
 
-        a:hover {
-            color: var(--primary-color);
-            text-decoration: underline;
-        }
+        .wrapper { width: 1060px; margin: 0 auto; }
+        .wrapper::after { content: ""; display: table; clear: both; }
 
-        a:visited {
-            color: var(--accent-color);
-        }
-
-        button {
-            font-family: inherit;
-        }
-
-        .link-button {
-            background: none;
-            border: none;
-            padding: 0;
-            margin: 0;
-            color: var(--accent-color);
-            cursor: pointer;
-            font: inherit;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        .link-button:hover {
-            color: var(--primary-color);
-            text-decoration: underline;
-        }
-
-        .link-button:focus-visible {
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
-        }
-
-        /* Skip link */
-        .skip-link {
-            position: absolute;
-            left: -999px;
-            top: auto;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-        }
-
-        .skip-link:focus {
-            position: static;
-            width: auto;
-            height: auto;
-            padding: 8px 12px;
-            background: #fff;
-            border: 1px solid var(--primary-color);
-            border-radius: 4px;
-            margin: 10px;
-            z-index: 1000;
-        }
-
-        /* Main Container */
-		.container {
-			width: 92%;
-			max-width: none;
-			margin: 0 auto;
-			padding: 40px 0 60px;
-		}
-
-        /* Header Section */
+        /* ── Fixed Sidebar ── */
         header {
-            border-bottom: 3px solid var(--primary-color);
-            padding-bottom: 30px;
-            margin-bottom: 40px;
-        }
-
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            width: var(--sidebar-w);
+            float: left;
+            position: fixed;
+            -webkit-font-smoothing: subpixel-antialiased;
         }
 
         header h1 {
-            font-size: 2.25rem;
-            color: var(--primary-color);
-            margin: 0;
-            font-weight: 600;
-            letter-spacing: -0.5px;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--navy);
+            margin: 0 0 5px;
+            line-height: 1.15;
         }
 
-        .header-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            align-items: center;
+        header .position {
+            font-size: 13px;
+            color: var(--muted);
+            margin: 0 0 12px;
+            line-height: 1.5;
         }
+
+        header hr {
+            border: 0;
+            background: var(--border);
+            height: 1px;
+            margin: 12px 0;
+        }
+
+        .nav-links { list-style: none; margin: 0 0 14px; padding: 0; }
+        .nav-links li { margin-bottom: 1px; }
+        .nav-links a {
+            font-size: 13px;
+            color: var(--muted);
+            display: block;
+            padding: 2px 0;
+        }
+        .nav-links a:hover { color: var(--navy); text-decoration: none; }
 
         .cv-link {
-            color: var(--highlight-color);
-            font-weight: 600;
-            font-size: 1.125rem;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--red);
+            display: inline-block;
+            margin-bottom: 10px;
         }
+        .cv-link:hover { color: #900015; text-decoration: none; }
 
-        .profile-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            font-size: 0.95rem;
-        }
+        .profile-links { font-size: 12.5px; margin-bottom: 16px; }
+        .profile-links a { color: var(--muted); margin-right: 10px; display: inline-block; }
+        .profile-links a:hover { color: var(--navy); }
 
-        .profile-links a {
-            color: var(--accent-color);
-            font-weight: 500;
-        }
-
-        /* Main Layout */
-        .main-content {
-            display: grid;
-            grid-template-columns: 300px 1fr;
-            gap: 50px;
-            margin-bottom: 60px;
-        }
-
-        /* Sidebar */
-        aside {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .profile-photo {
+        header img {
             width: 100%;
+            max-width: var(--sidebar-w);
             height: auto;
-            margin-bottom: 24px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin-top: 10px;
+            display: block;
+            border: 1px solid var(--border);
         }
 
-        .contact-info {
-            font-size: 1rem;
-            line-height: 1.8;
+        /* ── Footer (fixed bottom-left) ── */
+        footer {
+            width: var(--sidebar-w);
+            float: left;
+            position: fixed;
+            bottom: 50px;
+            font-size: 12px;
+            color: #bbb;
         }
 
-        .contact-info strong {
-            font-size: 1.05rem;
-            color: var(--text-color);
-            font-weight: 600;
-        }
-
-        /* Content Area */
-        main {
-            min-width: 0;
-        }
-
+        /* ── Main content column ── */
         section {
-            margin-bottom: 40px;
+            width: 700px;
+            float: right;
+            padding-bottom: 60px;
         }
 
-        section:last-child {
-            margin-bottom: 0;
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--navy);
+            margin: 0 0 14px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--navy);
         }
 
-        .section-title {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-bottom: 16px;
-            font-weight: 600;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 8px;
-            letter-spacing: -0.3px;
+        hr.divider {
+            border: 0;
+            background: transparent;
+            height: 1px;
+            margin: 28px 0;
         }
 
-        .section-content {
-            font-size: 1rem;
-            color: var(--text-color);
-        }
+        /* ── Bio ── */
+        .bio p { margin-bottom: 10px; font-size: 14px; }
+        .bio p:last-child { margin-bottom: 0; }
 
-        /* Intro (no "About" title) */
-        .intro {
-            margin-bottom: 28px;
-        }
+        /* ── Contact ── */
+        .contact-detail { font-size: 14px; line-height: 1.9; }
+        .contact-detail strong { color: var(--text); }
 
-        .intro p {
-            margin-bottom: 12px;
-        }
-
-        .intro p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Papers */
-		article.paper {
-			margin-bottom: 12px;
-			padding-bottom: 0;   /* or 6–8px if you want a touch more space */
-			border-bottom: none;
-		}
-
-		article.paper:last-child {
-			margin-bottom: 0;
-			padding-bottom: 0;
-		}
+        /* ── Papers ── */
+        article.paper { margin-bottom: 16px; }
 
         .paper-title {
-            color: var(--primary-color);
             font-weight: 600;
-            font-size: 1.05rem;
+            font-size: 14px;
+            color: var(--navy);
         }
+        .paper-title:hover { color: var(--purple); }
 
-        .paper-title:hover {
-            color: var(--accent-color);
-        }
+        .coauthors { font-size: 13.5px; color: var(--muted); }
+        .paper-date { font-size: 13px; color: var(--muted); }
 
-        .coauthors {
-            color: var(--text-secondary);
-            font-size: 0.97rem;
-        }
-
-        .paper-date {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            margin-top: 2px;
-        }
+        .journal { font-weight: 700; color: var(--red); }
 
         .abstract-toggle {
-            margin-top: 4px;
+            background: none;
+            border: none;
+            padding: 0;
+            font-family: inherit;
+            font-size: 13px;
+            color: var(--purple);
+            cursor: pointer;
         }
+        .abstract-toggle:hover { color: var(--navy); text-decoration: underline; }
 
         .abstract {
             display: none;
-            margin: 10px 0 0 16px;
-            padding: 12px;
-            background-color: #f8f9fa;
-            border-left: 3px solid var(--primary-color);
+            margin: 8px 0 0;
+            padding: 10px 14px;
+            background: #f8f8f8;
+            border-left: 3px solid var(--navy);
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.7;
             text-align: justify;
-            color: var(--text-secondary);
-            line-height: 1.75;
-            font-size: 0.95rem;
+        }
+        .abstract.is-visible { display: block; }
+
+        .paper-meta {
+            font-size: 13.5px;
+            color: var(--muted);
+            margin: 2px 0 3px;
         }
 
-        .abstract.is-visible {
-            display: block;
-        }
-
-        .journal {
-            color: var(--highlight-color);
+        .wip-title {
             font-weight: 600;
+            font-size: 14px;
+            color: var(--text);
         }
 
-        /* Footer */
-        footer {
-            margin-top: 60px;
-            padding-top: 24px;
-            border-top: 2px solid var(--border-color);
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
+        /* ── Teaching ── */
+        .course { margin-bottom: 12px; }
+        .course-name { font-weight: 600; font-size: 14px; color: var(--text); }
+        .course-desc { font-size: 13.5px; color: var(--muted); }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            html {
-                font-size: 15px;
-            }
-
-            .container {
-                padding: 40px 5%;
-            }
-
-            header {
-                padding-bottom: 24px;
-                margin-bottom: 32px;
-            }
-
-            .header-top {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            header h1 {
-                font-size: 1.875rem;
-            }
-
-            .header-links {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 12px;
-            }
-
-            .main-content {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-
-            aside {
-                text-align: center;
-            }
-
-            .profile-photo {
-                max-width: 260px;
-                margin: 0 auto 20px;
-            }
-
-            .contact-info {
-                text-align: center;
-            }
-
+        /* ── Responsive ── */
+        @media print, screen and (max-width: 1160px) {
+            div.wrapper { width: auto; margin: 0; }
+            header, section, footer { float: none; position: static; width: auto; }
+            header { padding-right: 320px; }
             section {
-                margin-bottom: 32px;
+                border: 1px solid var(--border);
+                border-width: 1px 0;
+                padding: 20px 0;
+                margin: 0 0 20px;
             }
-
-            .section-title {
-                font-size: 1.375rem;
-            }
-
-            .abstract {
-                margin-left: 0;
-                padding: 12px;
-            }
-
-            footer {
-                margin-top: 48px;
-            }
+            header img { max-width: 200px; }
         }
 
-        @media (max-width: 480px) {
-            html {
-                font-size: 14px;
-            }
-
-            .container {
-                padding: 30px 4%;
-            }
-
-            header h1 {
-                font-size: 1.625rem;
-            }
-
-            .section-title {
-                font-size: 1.25rem;
-            }
+        @media print, screen and (max-width: 720px) {
+            body { word-wrap: break-word; padding: 24px; }
+            header { padding: 0; }
         }
 
-        /* Print Styles */
+        @media print, screen and (max-width: 480px) {
+            body { padding: 15px; }
+        }
+
         @media print {
-            body {
-                font-size: 12pt;
-                line-height: 1.5;
-            }
-
-            .abstract {
-                display: block !important;
-            }
-
-            a {
-                color: #000;
-                text-decoration: underline;
-            }
-
-            .abstract-toggle {
-                display: none;
-            }
-
-            .header-links,
-            .profile-links {
-                display: none;
-            }
+            body { padding: 0.4in; font-size: 12pt; color: #444; }
+            .abstract { display: block !important; }
+            .abstract-toggle { display: none; }
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="wrapper">
 
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="header-top">
-                <h1>Paulo Lins</h1>
-                <div class="header-links" aria-label="External profiles">
-                    <a href="https://pclins.github.io/files/cv_paulo.pdf"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="cv-link"
-                       aria-label="Download CV as PDF">
-                        CV
-                    </a>
-                    <div class="profile-links">
-                        <a href="https://scholar.google.com/citations?hl=en&user=HLhQE9gAAAAJ"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Google Scholar
-                        </a>
-                        <a href="https://orcid.org/0000-0002-2559-4971"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            ORCID
-                        </a>
-                        <a href="https://ssrn.com/author=4004749"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            SSRN
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!-- ══ FIXED SIDEBAR ══ -->
+    <header>
+        <h1>Paulo Lins</h1>
+        <p class="position">Assistant Professor of Economics<br>Clemson University</p>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Sidebar -->
-            <aside>
-                <img src="files/profile2.jpg"
-                     alt="Portrait photograph of Paulo Lins"
-                     class="profile-photo"/>
+        <img src="files/profile2.jpg" alt="Portrait photograph of Paulo Lins" style="margin:14px 0;"/>
 
-                <div class="contact-info">
-                    <strong>
-                        <a href="mailto:plins@clemson.edu">
-                            plins@clemson.edu
-                        </a>
-                    </strong>
-                    <br/><br/>
-                    Assistant Professor<br/>
-                    Department of Economics<br/>
-                    Clemson University<br/>
-                    Clemson, SC 29634
-                </div>
-            </aside>
+        <hr>
 
-            <!-- Content -->
-            <main id="main-content">
-                <!-- Intro (no About title) -->
-                <section class="intro">
-                    <div class="section-content">
-                        <p>I am an Assistant Professor of Economics at Clemson University. I received my Ph.D. in Economics from the University of Rochester in 2024.</p>
-                        <p>My research interests are in macroeconomics and labor economics.</p>
-                    </div>
-                </section>
+        <ul class="nav-links">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#workingpapers">Working Papers</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#workinprogress">Work in Progress</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+        </ul>
 
-                <!-- Working Papers -->
-                <section>
-                    <h2 class="section-title">Working Papers</h2>
-                    <div class="section-content">
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <a href="https://pclins.github.io/files/permanent_income.pdf"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    Consumption's Response to Permanent Income: The Role of Consumption Commitments
-                                </a>
-                                <span class="paper-date"> (December 2025)</span>
-                                <button type="button"
-                                        class="link-button abstract-toggle"
-                                        onclick="toggleAbstract('abs_consumption', this)"
-                                        aria-expanded="false">
-                                    [Abstract]
-                                </button>
-                            </p>
+        <a href="https://pclins.github.io/files/cv_paulo.pdf"
+           class="cv-link" target="_blank" rel="noopener noreferrer">
+            Curriculum Vitae
+        </a>
 
-                            <div id="abs_consumption" class="abstract">
-                                The permanent-income hypothesis predicts consumption is proportional to permanent income, yet empirical elasticities are far below one.
-								I provide evidence that this under-response reflects consumption commitments---hard-to-adjust goods that lock households into past choices.
-								Four facts support this mechanism: consumption elasticity (i) declines with age, (ii) depends negatively on past permanent income growth,
-								(iii) exhibits path-dependent expenditure composition toward easy-to-adjust goods, and (iv) all path dependences disappear among households
-								that recently adjusted commitments. I use a quantitative life-cycle model to show that commitments are necessary to generate the age decline 
-								and history dependence. However, commitments are not sufficient to explain the average under-response; bequest motives and late-in-life luxury 
-								consumption are also quantitatively important. The calibrated model matches both micro consumption responses and aggregate wealth inequality.
-                            </div>
-                        </article>
-
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <a href="https://pclins.github.io/files/hours_life_cycle.pdf"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    The Early Career and the Sources of Life-Cycle Hours Growth
-                                </a>
-                                <span class="coauthors"> (with Xiaonan Ma)</span>
-                                <span class="paper-date"> (March 2026)</span>
-                                <button type="button"
-                                        class="link-button abstract-toggle"
-                                        onclick="toggleAbstract('school_to_work', this)"
-                                        aria-expanded="false">
-                                    [Abstract]
-                                </button>
-                            </p>
-
-                            <div id="school_to_work" class="abstract">
-                                Hours worked rise sharply in the first decade after labor-market entry. 
-                                We show that this growth is primarily an intensive-margin phenomenon driven 
-                                by human-capital incentives: about 60\% of the increase in cumulative hours 
-                                reflects longer workweeks among employed workers, not additional weeks worked. 
-                                To reach this conclusion, we estimate a life-cycle model with learning-by-doing 
-                                and on-the-job search using quarter-since-entry profiles constructed from 
-                                the NLSY79 and NLSY97. The model replicates the joint dynamics of hours, 
-                                wages, employment, and job mobility from the moment workers leave school. 
-                                In the estimated model, the return to current hours operates not only 
-                                through future wages but also through improved job stability and access 
-                                to better outside offers. A decomposition of wage inequality shows that 
-                                the growing covariance between human capital and match quality accounts 
-                                for the majority of the rise in wage variance over the first 20 years 
-                                after entry.
-                            </div>
-                        </article>
-
-                        <!-- <article class="paper">
-                            <p class="paper-ref">
-                                <a class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    Earnings Cuts Upon Transitions and the Role of Stepping-stone Employers
-                                </a>
-                                <span class="coauthors"> (with Xiaonan Ma)</span>
-                                <span class="paper-date"> (February 2026)</span>
-                                <button type="button"
-                                        class="link-button abstract-toggle"
-                                        onclick="toggleAbstract('stepping_stone', this)"
-                                        aria-expanded="false">
-                                    [Abstract]
-                                </button>
-                            </p>
-
-                            <div id="stepping_stone" class="abstract">
-                                This article studies the prevalence and drivers of earnings cuts upon transitions (ECUTs) in U.S. labor market. Using linked administrative-survey dataset, 
-                                I identify the workers' reported motivations for transitions and study their relationship to ECUTs. I find that half of ECUTs are related to pecuniary motivation, 
-                                and 29% of transitions motivated only by pecuniary reason involve ECUTs, suggesting a potential tradeoff between current and future earnings during job transitions.
-                                Further analyses show that workers who transition for pecuniary reasons have higher future earnings growth and higher probability of subsequent transitions.   
-                                I then argue that certain employers serve as ``stepping-stones" by offering better prospects of moving to better employers.  
-                                Pursuing such stepping-stone employers thus represents a pecuniary motivation for job transitions and partially explains ECUTs.
-                                To formalize this mechanism, I develop a random search model in which employers differ in both quantity and quality of job offer arrival rates. 
-                                Quantitative results suggest that stepping-stone employers, particularly those with higher arrival rates of quality offers, 
-                                function as a critical pecuniary motivation for ECUTs and transitions.
-                            </div>
-                        </article> -->
-
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <a href="https://pclins.github.io/files/Growing_up_with_an_Unemployed_Mother.pdf"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    Growing up with an Unemployed Mother
-                                </a>
-                                <span class="coauthors"> (with Nataliya Gimpelson)</span>
-                                <span class="paper-date"> (February 2026)</span>
-                                <button type="button"
-                                        class="link-button abstract-toggle"
-                                        onclick="toggleAbstract('abs_mother', this)"
-                                        aria-expanded="false">
-                                    [Abstract]
-                                </button>
-                            </p>
-
-                            <div id="abs_mother" class="abstract">
-                                We study the long-term consequences of maternal unemployment on children's labor market outcomes. Using the NLSY, we show that children exposed
-                                to maternal unemployment during childhood have lower wages and employment probabilities as adults. These effects remain even after controlling
-                                for family income, indicating that income loss alone cannot explain the observed scarring effects. Our results suggest that (i) greater parental
-                                time availability does not mitigate the damage and (ii) non-income channels play a key role. Finally, we find that the negative effects are
-                                concentrated in adolescence, with maternal unemployment during these years leading to earlier labor force entry and reduced educational attainment.
-                            </div>
-                        </article>
-                    </div>
-                </section>
-
-                <!-- Publications -->
-                <section>
-                    <h2 class="section-title">Publications</h2>
-                    <div class="section-content">
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <a href="https://pclins.github.io/files/Araujo%2C%20Costa%2C%20Lins%2C%20Santos%2C%20Valk%20-%20Inflation%20Targeting%20under%20Fiscal%20Fragility.pdf"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    Inflation Targeting under Fiscal Fragility
-                                </a>
-                                <span class="coauthors">(with Aloísio Araujo, Victor Costa, Rafael Santos, and Serge de Valk)</span>,
-                                <span class="journal">American Economic Journal: Macroeconomics</span>, April 2026.
-                                <button type="button"
-                                        class="link-button abstract-toggle"
-                                        onclick="toggleAbstract('abs_inflation', this)"
-                                        aria-expanded="false">
-                                    [Abstract]
-                                </button>
-                            </p>
-
-                            <div id="abs_inflation" class="abstract">
-                                We propose a model to study an inflation-targeting regime under a high government debt burden. We assume that an altruistic policymaker chooses debt issuance,
-                                inflation, and public expenditure, while private agents dislike inflation and finance the government. We show that equilibrium inflation depends on debt level:
-                                (1) on-target when debt is low; (2) above the target when debt is high; (3) either above or on-target in between, a zone that we named fiscal fragility.
-                                Equilibrium inflation also depends on the target level: a higher target may improve welfare by preventing fiscal fragility and reducing debt-rollover costs.
-                            </div>
-                        </article>
-
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <a href="https://pclins.github.io/files/Bils%2C%20Kudlyak%2C%20Lins%20-%20The%20Quality-Adjusted%20Cyclical%20Price%20of%20Labor.pdf"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    The Quality-Adjusted Cyclical Price of Labor
-                                </a>
-                                <span class="coauthors"> (with Mark Bils and Marianna Kudlyak)</span>,
-                                <span class="journal">Journal of Labor Economics</span>, October 2023.
-                                <button type="button"
-                                        class="link-button abstract-toggle"
-                                        onclick="toggleAbstract('abs_pricelabor', this)"
-                                        aria-expanded="false">
-                                    [Abstract]
-                                </button>
-                            </p>
-
-                            <div id="abs_pricelabor" class="abstract">
-                                We estimate cyclicality in labor's user cost allowing for cyclical fluctuations in the quality of worker-firm matches and wages that are smoothed within employment matches.
-                                To do so, we exploit a match's long-run wage to control for its quality. Using NLSY data for 1980 to 2019, we identify three channels by which recessions affect user cost:
-                                It lowers the new-hire wage; it lowers wages going forward in the match; but it also results in higher subsequent separations. All totaled, we find that labor's user cost
-                                is highly procyclical, increasing by more than 4% for a 1 pp decline in unemployment.
-                            </div>
-                        </article>
-
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <a href="https://pclins.github.io/files/Lins,%20Pinheiro%20-%20Current%20Constraints%20on%20Growth.pdf"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    Current Constraints on Growth
-                                </a>
-                                <span class="coauthors"> (with Armando Castelar Pinheiro)</span>,
-                                in Antonio Spilimbergo and Krishna Srinivasan (eds.),
-                                <span class="journal">Brazil: Boom, Bust, and the Road to Recovery</span>, IMF, March 2019.
-                                <a href="https://www.imf.org/en/Publications/Books/Issues/2019/03/11/Brazil-Boom-Bust-and-Road-to-Recovery-44927"
-                                   class="paper-title"
-                                   target="_blank"
-                                   rel="noopener noreferrer">
-                                    [Book]
-                                </a>
-                            </p>
-                        </article>
-                    </div>
-                </section>
-
-                <!-- Work in Progress -->
-                <section>
-                    <h2 class="section-title">Work in Progress</h2>
-                    <div class="section-content">
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <strong>Firm Stochastic Discount Factors Over the Business Cycle</strong>
-                                <span class="coauthors"> (with Lorenz Ekerdt and Kai-Jie Wu)</span>
-                            </p>
-                        </article>
-
-                        <article class="paper">
-                            <p class="paper-ref">
-                                <strong>Wedge-Accounting in Multi-Sector Models</strong>
-                                <span class="coauthors"> (with Eugenio González Flores and Gian Paulo Soave)</span>.
-                            </p>
-                        </article>
-                    </div>
-                </section>
-            </main>
+        <div class="profile-links">
+            <a href="https://scholar.google.com/citations?hl=en&user=HLhQE9gAAAAJ"
+               target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://orcid.org/0000-0002-2559-4971"
+               target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://ssrn.com/author=4004749"
+               target="_blank" rel="noopener noreferrer">SSRN</a>
         </div>
-    </div>
 
-    <script>
-        function toggleAbstract(id, trigger) {
-            var abstract = document.getElementById(id);
-            if (!abstract) return;
+    </header>
 
-            var isVisible = abstract.classList.toggle('is-visible');
-            if (trigger) {
-                trigger.setAttribute('aria-expanded', isVisible ? 'true' : 'false');
-            }
-        }
-    </script>
+    <!-- ══ MAIN COLUMN ══ -->
+    <section>
+
+        <!-- Bio -->
+        <div id="bio" class="bio">
+            <p>Welcome to my website! I am an Assistant Professor in the Economics Department at Clemson University. I received my Ph.D. in Economics from the University of Rochester in 2024.</p>
+            <p>My research interests are in macroeconomics and labor economics. My work combines structural estimation with micro and administrative data to study life-cycle labor supply, consumption behavior, and business cycle dynamics.</p>
+        </div>
+
+
+        <hr class="divider">
+
+        <!-- Contact -->
+        <div id="contact">
+            <h2>Contact</h2>
+            <p class="contact-detail">
+                <strong>Email</strong>: <a href="mailto:pclins@clemson.edu">pclins@clemson.edu</a><br>
+                <strong>Office</strong>: Department of Economics, Clemson University, Clemson, SC 29634
+            </p>
+        </div>
+
+
+        <hr class="divider">
+
+        <!-- Working Papers -->
+        <div id="workingpapers">
+            <h2>Working Papers</h2>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <a href="https://pclins.github.io/files/permanent_income.pdf"
+                       class="paper-title" target="_blank" rel="noopener noreferrer">
+                        Consumption's Response to Permanent Income: The Role of Consumption Commitments
+                    </a>
+                </p>
+                <p class="paper-meta">
+                    <span class="paper-date">(December 2025)</span>
+                    &ensp;<button class="abstract-toggle" onclick="toggleAbstract('abs_consumption',this)" aria-expanded="false">[Abstract]</button>
+                </p>
+                <div id="abs_consumption" class="abstract">
+                    The permanent-income hypothesis predicts consumption is proportional to permanent income, yet empirical elasticities are far below one.
+                    I provide evidence that this under-response reflects consumption commitments—hard-to-adjust goods that lock households into past choices.
+                    Four facts support this mechanism: consumption elasticity (i) declines with age, (ii) depends negatively on past permanent income growth,
+                    (iii) exhibits path-dependent expenditure composition toward easy-to-adjust goods, and (iv) all path dependences disappear among households
+                    that recently adjusted commitments. I use a quantitative life-cycle model to show that commitments are necessary to generate the age decline
+                    and history dependence. However, commitments are not sufficient to explain the average under-response; bequest motives and late-in-life luxury
+                    consumption are also quantitatively important. The calibrated model matches both micro consumption responses and aggregate wealth inequality.
+                </div>
+            </article>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <a href="https://pclins.github.io/files/hours_life_cycle.pdf"
+                       class="paper-title" target="_blank" rel="noopener noreferrer">
+                        The Early Career and the Sources of Life-Cycle Hours Growth
+                    </a>
+                </p>
+                <p class="paper-meta">
+                    <span class="coauthors">(with Xiaonan Ma)</span>
+                    &ensp;<span class="paper-date">(March 2026)</span>
+                    &ensp;<button class="abstract-toggle" onclick="toggleAbstract('abs_hours',this)" aria-expanded="false">[Abstract]</button>
+                </p>
+                <div id="abs_hours" class="abstract">
+                    Hours worked rise sharply in the first decade after labor-market entry.
+                    We show that this growth is primarily an intensive-margin phenomenon driven by human-capital incentives:
+                    about 60% of the increase in cumulative hours reflects longer workweeks among employed workers, not additional weeks worked.
+                    To reach this conclusion, we estimate a life-cycle model with learning-by-doing and on-the-job search using
+                    quarter-since-entry profiles constructed from the NLSY79 and NLSY97. The model replicates the joint dynamics of
+                    hours, wages, employment, and job mobility from the moment workers leave school. In the estimated model, the return
+                    to current hours operates not only through future wages but also through improved job stability and access to better
+                    outside offers. A decomposition of wage inequality shows that the growing covariance between human capital and match
+                    quality accounts for the majority of the rise in wage variance over the first 20 years after entry.
+                </div>
+            </article>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <a href="https://pclins.github.io/files/Growing_up_with_an_Unemployed_Mother.pdf"
+                       class="paper-title" target="_blank" rel="noopener noreferrer">
+                        Growing up with an Unemployed Mother
+                    </a>
+                </p>
+                <p class="paper-meta">
+                    <span class="coauthors">(with Nataliya Gimpelson)</span>
+                    &ensp;<span class="paper-date">(February 2026)</span>
+                    &ensp;<button class="abstract-toggle" onclick="toggleAbstract('abs_mother',this)" aria-expanded="false">[Abstract]</button>
+                </p>
+                <div id="abs_mother" class="abstract">
+                    We study the long-term consequences of maternal unemployment on children's labor market outcomes. Using the NLSY,
+                    we show that children exposed to maternal unemployment during childhood have lower wages and employment probabilities
+                    as adults. These effects remain even after controlling for family income, indicating that income loss alone cannot
+                    explain the observed scarring effects. Our results suggest that (i) greater parental time availability does not
+                    mitigate the damage and (ii) non-income channels play a key role. Finally, we find that the negative effects are
+                    concentrated in adolescence, with maternal unemployment during these years leading to earlier labor force entry
+                    and reduced educational attainment.
+                </div>
+            </article>
+        </div>
+
+
+        <hr class="divider">
+
+        <!-- Publications -->
+        <div id="publications">
+            <h2>Publications</h2>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <a href="https://pclins.github.io/files/Araujo%2C%20Costa%2C%20Lins%2C%20Santos%2C%20Valk%20-%20Inflation%20Targeting%20under%20Fiscal%20Fragility.pdf"
+                       class="paper-title" target="_blank" rel="noopener noreferrer">
+                        Inflation Targeting under Fiscal Fragility
+                    </a>
+                </p>
+                <p class="paper-meta">
+                    <span class="coauthors">(with Aloísio Araujo, Victor Costa, Rafael Santos, and Serge de Valk)</span>
+                </p>
+                <p class="paper-meta">
+                    <span class="journal">American Economic Journal: Macroeconomics</span>, April 2026.
+                    &ensp;<button class="abstract-toggle" onclick="toggleAbstract('abs_inflation',this)" aria-expanded="false">[Abstract]</button>
+                </p>
+                <div id="abs_inflation" class="abstract">
+                    We propose a model to study an inflation-targeting regime under a high government debt burden. We assume that an altruistic policymaker
+                    chooses debt issuance, inflation, and public expenditure, while private agents dislike inflation and finance the government. We show that
+                    equilibrium inflation depends on debt level: (1) on-target when debt is low; (2) above the target when debt is high; (3) either above or
+                    on-target in between, a zone that we named fiscal fragility. Equilibrium inflation also depends on the target level: a higher target may
+                    improve welfare by preventing fiscal fragility and reducing debt-rollover costs.
+                </div>
+            </article>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <a href="https://pclins.github.io/files/Bils%2C%20Kudlyak%2C%20Lins%20-%20The%20Quality-Adjusted%20Cyclical%20Price%20of%20Labor.pdf"
+                       class="paper-title" target="_blank" rel="noopener noreferrer">
+                        The Quality-Adjusted Cyclical Price of Labor
+                    </a>
+                </p>
+                <p class="paper-meta">
+                    <span class="coauthors">(with Mark Bils and Marianna Kudlyak)</span>
+                </p>
+                <p class="paper-meta">
+                    <span class="journal">Journal of Labor Economics</span>, October 2023.
+                    &ensp;<button class="abstract-toggle" onclick="toggleAbstract('abs_pricelabor',this)" aria-expanded="false">[Abstract]</button>
+                </p>
+                <div id="abs_pricelabor" class="abstract">
+                    We estimate cyclicality in labor's user cost allowing for cyclical fluctuations in the quality of worker-firm matches and wages that are
+                    smoothed within employment matches. To do so, we exploit a match's long-run wage to control for its quality. Using NLSY data for 1980 to 2019,
+                    we identify three channels by which recessions affect user cost: It lowers the new-hire wage; it lowers wages going forward in the match; but
+                    it also results in higher subsequent separations. All totaled, we find that labor's user cost is highly procyclical, increasing by more than 4%
+                    for a 1 pp decline in unemployment.
+                </div>
+            </article>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <a href="https://pclins.github.io/files/Lins,%20Pinheiro%20-%20Current%20Constraints%20on%20Growth.pdf"
+                       class="paper-title" target="_blank" rel="noopener noreferrer">
+                        Current Constraints on Growth
+                    </a>
+                </p>
+                <p class="paper-meta">
+                    <span class="coauthors">(with Armando Castelar Pinheiro)</span>
+                </p>
+                <p class="paper-meta">
+                    in Antonio Spilimbergo and Krishna Srinivasan (eds.),
+                    <span class="journal">Brazil: Boom, Bust, and the Road to Recovery</span>, IMF, March 2019.
+                    &ensp;<a href="https://www.imf.org/en/Publications/Books/Issues/2019/03/11/Brazil-Boom-Bust-and-Road-to-Recovery-44927"
+                       target="_blank" rel="noopener noreferrer">[Book]</a>
+                </p>
+            </article>
+        </div>
+
+
+        <hr class="divider">
+
+        <!-- Work in Progress -->
+        <div id="workinprogress">
+            <h2>Work in Progress</h2>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <strong class="wip-title">Firm Stochastic Discount Factors Over the Business Cycle</strong>
+                </p>
+                <p class="paper-meta"><span class="coauthors">(with Lorenz Ekerdt and Kai-Jie Wu)</span></p>
+            </article>
+
+            <article class="paper">
+                <p style="margin:0 0 2px">
+                    <strong class="wip-title">Wedge-Accounting in Multi-Sector Models</strong>
+                </p>
+                <p class="paper-meta"><span class="coauthors">(with Eugenio González Flores and Gian Paulo Soave)</span></p>
+            </article>
+        </div>
+
+
+        <hr class="divider">
+
+        <!-- Teaching -->
+        <div id="teaching">
+            <h2>Teaching</h2>
+
+            <p style="font-size:13.5px; font-weight:700; color:var(--text); margin:0 0 10px;">Clemson University</p>
+
+            <div class="course">
+                <p class="course-name">Intermediate Macroeconomics (EC 3150, Undergraduate)</p>
+                <p class="course-desc">Fall/Spring 2024–25, 2025–26, 2026–27</p>
+            </div>
+
+            <div class="course">
+                <p class="course-name">Internship in Economics (EC 3990, Undergraduate)</p>
+                <p class="course-desc">Summer 2025</p>
+            </div>
+
+            <div class="course">
+                <p class="course-name">Computational Methods in Economic Dynamics (EC 9820, Graduate)</p>
+                <p class="course-desc">Fall 2025, Fall 2026</p>
+            </div>
+
+            <p style="font-size:13.5px; font-weight:700; color:var(--text); margin:16px 0 10px;">University of Rochester</p>
+
+            <div class="course">
+                <p class="course-name">Macro Summer Course (Graduate)</p>
+                <p class="course-desc">Summer 2021, Summer 2022</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>&copy; Paulo Lins</footer>
+
+</div>
+
+<script>
+    function toggleAbstract(id, btn) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var visible = el.classList.toggle('is-visible');
+        btn.setAttribute('aria-expanded', visible ? 'true' : 'false');
+    }
+</script>
 </body>
 </html>
