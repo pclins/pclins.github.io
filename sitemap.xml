@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url>
+    <loc>https://pauloclins.com/</loc>
+  </url>
 
-<url>
-  <loc>https://pauloclins.com/</loc>
-  <lastmod>2025-11-29T16:48:10+00:00</lastmod>
-</url>
+  <url>
+    <loc>https://pauloclins.com/files/cv_paulo.pdf</loc>
+  </url>
 
+  <url>
+    <loc>https://pauloclins.com/files/permanent_income.pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://pauloclins.com/files/hours_life_cycle.pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://pauloclins.com/files/Growing_up_with_an_Unemployed_Mother.pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://pauloclins.com/files/Araujo%2C%20Costa%2C%20Lins%2C%20Santos%2C%20Valk%20-%20Inflation%20Targeting%20under%20Fiscal%20Fragility.pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://pauloclins.com/files/Bils%2C%20Kudlyak%2C%20Lins%20-%20The%20Quality-Adjusted%20Cyclical%20Price%20of%20Labor.pdf</loc>
+  </url>
+
+  <url>
+    <loc>https://pauloclins.com/files/Lins%2C%20Pinheiro%20-%20Current%20Constraints%20on%20Growth.pdf</loc>
+  </url>
 
 </urlset>
