@@ -173,6 +173,18 @@
         }
         .paper-title:hover { color: var(--purple); }
 
+        .paper-title-coming-soon {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--navy);
+        }
+
+        .coming-soon {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--red);
+        }
+
         .coauthors { font-size: 13.5px; color: var(--muted); }
         .paper-date { font-size: 13px; color: var(--muted); }
 
@@ -388,28 +400,35 @@
         </div>
 
         <article class="paper">
-                <p style="margin:0 0 2px">
-                        Earnings Cuts Upon Transitions and the Role of Stepping-stone Employers
-                    </a>
-                </p>
-                <p class="paper-meta">
-                    <span class="coauthors">(with Xiaonan Ma)</span>
-                    &ensp;<span class="paper-date">(July 2026)</span>
-                    &ensp;<button class="abstract-toggle" onclick="toggleAbstract('abs_sstones',this)" aria-expanded="false">[Abstract]</button>
-                </p>
-                <div id="abs_sstones" class="abstract">
-                    This article studies the prevalence and drivers of earnings cuts upon job transitions (ECUTs) in the U.S. labor market. 
-                    We argue that a significant fraction of ECUTs reflect strategic behavior: workers accept lower initial earnings to join 
-                    stepping-stone employers -- firms whose departing workers systematically move to higher-paying employers. Using linked 
-                    administrative data, we show that workers accept larger earnings cuts to join firms with higher upgrading rates and 
-                    subsequently experience greater wage growth and upward mobility. Using a unique linked administrative-survey dataset, 
-                    we identify workers' reported motivations for transitions, finding that 29% of transitions motivated solely by 
-                    pecuniary reasons involve ECUTs, and that these workers disproportionately target stepping-stone firms and achieve 
-                    higher future earnings growth. To formalize this mechanism, we develop a random search model in which employers differ 
-                    in both the quantity and quality of job offer arrival rates. The quantitative results suggest that stepping-stone employers, 
-                    particularly those with higher-quality offer arrival rates, serve as a critical pecuniary motivation for ECUTs.
-                </div>
-            </article>
+            <p style="margin:0 0 2px">
+                <strong class="paper-title-coming-soon">
+                    Earnings Cuts Upon Transitions and the Role of Stepping-Stone Employers
+                </strong>
+            </p>
+        
+            <p class="paper-meta">
+                <span class="coauthors">(with Xiaonan Ma)</span>
+                &ensp;<span class="paper-date">(July 2026)</span>
+                &ensp;<span class="coming-soon">[New draft coming soon]</span>
+                &ensp;<button
+                    class="abstract-toggle"
+                    onclick="toggleAbstract('abs_sstones',this)"
+                    aria-expanded="false">[Abstract]</button>
+            </p>
+        
+            <div id="abs_sstones" class="abstract">
+                This article studies the prevalence and drivers of earnings cuts upon job transitions (ECUTs) in the U.S. labor market.
+                We argue that a significant fraction of ECUTs reflect strategic behavior: workers accept lower initial earnings to join
+                stepping-stone employers -- firms whose departing workers systematically move to higher-paying employers. Using linked
+                administrative data, we show that workers accept larger earnings cuts to join firms with higher upgrading rates and
+                subsequently experience greater wage growth and upward mobility. Using a unique linked administrative-survey dataset,
+                we identify workers' reported motivations for transitions, finding that 29% of transitions motivated solely by
+                pecuniary reasons involve ECUTs and that these workers disproportionately target stepping-stone firms and achieve
+                higher future earnings growth. To formalize this mechanism, we develop a random search model in which employers differ
+                in both the quantity and quality of job-offer arrival rates. The quantitative results suggest that stepping-stone employers,
+                particularly those with higher-quality offer arrival rates, provide an important pecuniary motivation for ECUTs.
+            </div>
+        </article>
 
 
         <hr class="divider">
